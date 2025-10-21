@@ -1,0 +1,90 @@
+# Logs
+logs
+# Node and package dependencies
+node_modules/
+server/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+/.vite
+
+# Vite cache and artifacts
+.vite/
+*.local
+
+# Environment variables (do not commit)
+.env
+.env.*
+server/.env
+server/.env.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Cache and temporary files
+.cache/
+.temp/
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js.snap
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+.DS_Store
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Misc tool caches
+.eslintcache
+.stylelintcache
+.parcel-cache
+.turbo
+.npm
+.yarn
+.pnp
+.pnp.js
+
+# Lock files (optional - uncomment to ignore)
+## package-lock.json
+## yarn.lock
+## pnpm-lock.yaml
+
+# Public assets or generated screenshots
+screenshots/*.png
+!screenshots/.gitkeep
+
+# Notes:
+# - This file ignores common Node, Vite, and editor artifacts for both the root app and the server/ folder.
+# - If a file is already tracked by git and you want it ignored now, run: git rm --cached <file> && git commit -m "Stop tracking <file>"
+

@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 100% 98%;
+    --foreground: 240 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 100% 66%;
+    --secondary: 262 70% 95%;
+    --secondary-foreground: 262 83% 30%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 262 83% 58%;
+    --radius: 1rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 100% 66%));
+    --gradient-secondary: linear-gradient(135deg, hsl(280 70% 60%), hsl(200 90% 60%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.95), hsl(0 0% 100% / 0.85));
+    --shadow-elegant: 0 20px 60px -15px hsl(262 83% 58% / 0.3);
+    --shadow-glow: 0 0 30px hsl(262 83% 58% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 250 50% 5%;
+    --foreground: 0 0% 95%;
+    --card: 240 10% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 10% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 100% 66%;
+    --secondary: 262 50% 20%;
+    --secondary-foreground: 262 83% 90%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 262 83% 58%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 100% 66%));
+    --gradient-secondary: linear-gradient(135deg, hsl(280 70% 50%), hsl(200 90% 50%));
+    --gradient-card: linear-gradient(135deg, hsl(240 10% 12% / 0.95), hsl(240 10% 14% / 0.9));
+    --shadow-elegant: 0 20px 60px -15px hsl(262 83% 58% / 0.4);
+    --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.2);
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
